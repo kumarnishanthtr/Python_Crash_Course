@@ -24,6 +24,7 @@ Variable holds a value. Python keeps track of its current value. Variables canno
 ### Key Concepts
 - **NameError:** means we either forgot to set a variable’s value before using it, or we made a spelling mistake when entering the variable’s name.
 - **Strings:** Anything inside a single/double quote is a string. These are a type of datatype which is used to store a series of characters.
+- **Methods:** A method is an action that Python can perform on a piece of data.
 
 ### Code Snippets
 ```python
