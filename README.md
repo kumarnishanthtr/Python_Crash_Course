@@ -31,4 +31,10 @@ Variable holds a value. Python keeps track of its current value. Variables canno
 # Computers are strict, but they disregard good and bad spelling.
 mesage = "Hello Python Crash Course reader!"
 print(mesage)
+
+# methods for string
+name = "Ada Lovelace"
+print(name.upper())
+print(name.lower())
 ```
+
