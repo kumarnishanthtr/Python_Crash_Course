@@ -156,3 +156,124 @@ del invite_list[0]
 del invite_list[0]
 
 print(invite_list)
+
+# Organize a list
+# sort method (permanent!)
+tvshow_list
+tvshow_list.sort()
+print(tvshow_list)
+tvshow_list.sort(reverse=True)
+print(tvshow_list)
+
+# sorted method (temporary)
+print(names)
+print(sorted(names))
+print(sorted(names, reverse=True))
+
+# reverse method (not alphabetically, just reverse order)
+# permanent
+print(names)
+names.reverse()
+print(names)
+
+
+# finding the length of a list
+# len
+print(names)
+len(names)
+
+# Python counts the items in a list starting with one, so you shouldn’t run into any off-
+# by-one errors when determining the length of a list.
+
+
+# 3-8. Seeing the World: Think of at least five places in the world you’d like to
+# visit .
+# Store the locations in a list . Make sure the list is not in alphabetical order
+places = ['Finalnd', 'London', 'Philippines', 'Mauritius', 'Peru', 'Alaska', 'San Francisco']
+
+# Print your list in its original order . Don’t worry about printing the list neatly,
+# just print it as a raw Python list .
+print(places)
+
+# Use sorted() to print your list in alphabetical order without modifying the
+# actual list .
+sorted(places)
+
+# Show that your list is still in its original order by printing it .
+print(places)
+
+# Use sorted() to print your list in reverse alphabetical order without chang-
+# ing the order of the original list 
+sorted(places, reverse=True)
+
+# Show that your list is still in its original order by printing it again .
+print(places)
+
+# Use reverse() to change the order of your list . Print the list to show that its
+# order has changed .
+places.reverse()
+print(places)
+
+# Use reverse() to change the order of your list again . Print the list to show
+# it’s back to its original order .
+places.reverse()
+print(places)
+
+# Use sort() to change your list so it’s stored in alphabetical order . Print the
+# list to show that its order has been changed .
+places.sort()
+print(places)
+
+# Use sort() to change your list so it’s stored in reverse alphabetical order .
+# Print the list to show that its order has changed 
+places.sort(reverse=True)
+print(places)
+
+# 3-9. Dinner Guests: Working with one of the programs from Exercises 3-4
+# through 3-7 (page 46), use len() to print a message indicating the number
+# of people you are inviting to dinner 
+print(invite_list)
+print('We have a total of', len(invite_list), 'guests invited for dinner')
+
+# 3-10. Every Function: Think of something you could store in a list . For example,
+# you could make a list of mountains, rivers, countries, cities, languages, or any-
+# thing else you’d like . Write a program that creates a list containing these items
+# and then uses each function introduced in this chapter at least once.
+print("I'm going to have to respectfully disagree on this one mate!")
+
+
+
+# index error
+# when we ask for more than what we currently have
+sample_list = ['mango', 'apple', 'banana']
+print(len(sample_list))
+
+# print 4th element
+print(sample_list[4])
+# IndexError: list index out of range
+
+# better way to get the last element in a list
+print(len(sample_list))
+# we got 3 as output. so, to get the last element we usually think of 3rd element
+print(sample_list[3])
+# but python counts from zero. so, the last element is at index 2
+print(sample_list[2])
+# banana
+
+# instead, we can get the last element by giving -1
+print(sample_list[-1])
+# banana
+
+# 3-11. Intentional Error: If you haven’t received an index error in one of your
+# programs yet, try to make one happen . Change an index in one of your pro-
+# grams to produce an index error . Make sure you correct the error before clos-
+# ing the program .
+
+my_super_list= ['i', 'have', 'a', 'dream']
+print(len(my_super_list))
+
+my_super_list[4]
+# IndexError: list index out of range
+
+my_super_list[-1]
+# dream
