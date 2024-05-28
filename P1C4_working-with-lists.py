@@ -51,4 +51,49 @@ for place in places_visted:
 for place in places_visted
     print(place.title())
 
+"""
+Created on Tue May 28 11:23:51 2024
+
+@author: nikumar
+"""
+
+# Making numerical lists
+# using range() function
+for value in range(1,6):
+    print(value)
+
+# it never prints 6 because it stops at 6 and doesn't print it.
+
+# Using range() to Make a List of Numbers
+numbers = list(range(1,6))
+    
+
+# making a list of even numbers using range()
+even_num = list(range(0, 10, 2))
+print(even_num)
+
+# making a list of odd numbers using range()
+odd_num = list(range(1, 10, 2))
+print(odd_num)
+
+
+# creating a range of squared numbers from 1 to 10
+squares = []
+for value in range(1,11):
+    square = value ** 2
+    squares.append(square)
+
+print(squares)
+
+# simple math functions
+numbers = list(range(0,11))
+
+
+min(numbers)
+max(numbers)
+sum(numbers)
+
+# List Comprehensions
+squares_new = [value**2 for value in range(1,11)]
+print(squares_new)
 
