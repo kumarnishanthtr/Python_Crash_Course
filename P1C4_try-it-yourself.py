@@ -97,3 +97,56 @@ print(cubes)
 cubes_new = [value ** 3 for value in range(1,11)]
 print(cubes_new)
 
+# 4-10. Slices: Using one of the programs you wrote in this chapter, add several
+# lines to the end of the program that do the following:
+# 1.Print the message, The first three items in the list are: . Then use a slice to
+#   print the first three items from that program’s list .
+# 2.Print the message, Three items from the middle of the list are: . Use a slice
+#   to print three items from the middle of the list .
+# 3. Print the message, The last three items in the list are: . Use a slice to print
+#    the last three items in the list
+fruit_list = ['Mango', 'Lychee', 'Grapes', 'Blueberry', 'Papaya', 'Pineapple', 'Orange', 'Banana']
+print('The first three items in the list are:')
+print(fruit_list[:3])
+
+print('Three items from the middle of the list are')
+print(fruit_list[3:6])
+
+print('The last three items in the list are')
+print(fruit_list[-3:])
+
+# 4-11. Start with your program from Exercise 4-1
+# (page 60) . Make a copy of the list of dosa, and call it friend_dosa .
+my_dosa = ['Masala', 'Onion', 'Set', 'Heerekaayi']
+friend_dosa = my_dosa[:]
+
+# Then, do the following:
+
+# 1. Add a new dosa to the original list .
+my_dosa.append('Tomato')
+
+# 2. Add a different dosa to the list friend_dosa 
+friend_dosa.append('Pineapple') # eww
+
+# 3. Prove that you have two separate lists . Print the message, My favorite
+#   dosa are:, and then use a for loop to print the first list . Print the message,
+#   My friend’s favorite dosa are:, and then use a for loop to print the sec-
+#   ond list . Make sure each new dosa is stored in the appropriate list .    
+print('My favourite dosa are:')
+for i in my_dosa:
+    print(i.title())
+
+print('My friend’s favourite dosa are:')
+for i in friend_dosa:
+    print(i.title())
+
+# 4-12. More Loops: All versions of foods.py in this section have avoided using
+# for loops when printing to save space . Choose a version of foods.py, and
+# write two for loops to print each list of foods 
+print("Different varieties of Dosa I like!")
+for dosa in my_dosa:
+    
+    print(dosa.title() + ' Dosa')
+
+
+

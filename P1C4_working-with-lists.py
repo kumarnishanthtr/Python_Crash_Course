@@ -97,3 +97,60 @@ sum(numbers)
 squares_new = [value**2 for value in range(1,11)]
 print(squares_new)
 
+# -*- coding: utf-8 -*-
+"""
+Created on Wed May 29 18:28:07 2024
+
+@author: nikumar
+"""
+os_names = ['android', 'ios', 'linux', 'windows', 'symbian']
+
+# Slicing a List 
+print(os_names[0:3])
+
+# and 
+
+print(os_names[:3])
+
+# are same. 0 is automatically added if starting range is not specified.
+
+# similarly
+
+print(os_names[2:5])
+
+# and
+
+print(os_names[2:])
+
+# are same. 
+
+# also negative index returns that many elements from the end
+
+print(os_names[-1:])
+
+# this prints the last element. this is useful when we don't know the length of the list
+
+# Looping Through a Slice
+
+cities = ['Masthikatte', 'Gundlupet', 'Shimoga', 'Bangalore']
+
+print("Here are the first two cities i studied school...")
+for city in cities[:2]:
+    print(city.title())
+    
+
+# Copying a List
+my_foods = ['Pizza', 'Vada Pav', 'Heerekaayi Dosa', 'Pulav']
+
+friend_foods = my_foods[:]
+
+
+copy_foods = my_foods
+#In this case, copy_foods is not a new list. Instead, it is a reference to the same list object that my_foods refers to.
+# Any changes made to copy_foods will also affect my_foods because they both point to the same list object. They are two references to the same data.
+
+copy_foods.append('Ice cream')
+copy_foods.remove('Pulav')
+
+my_foods.append('Pav Bhaji')
+friend_foods.append('Burger')
