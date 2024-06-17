@@ -154,3 +154,39 @@ copy_foods.remove('Pulav')
 
 my_foods.append('Pav Bhaji')
 friend_foods.append('Burger')
+
+
+# Tuples
+# Python refers to values that cannot change as immutable, 
+# and an immutable list is called a tuple.
+
+
+dimensions_list = [200, 50] # list
+dimensions_tuple = (200, 50) #tuple
+
+# try to change the first value from 200 to 300
+dimensions_list[0] = 300 # success!
+dimensions_tuple[0] = 300 # TypeError: 'tuple' object does not support item assignment
+
+# Writing over a Tuple
+# Although you can’t modify a tuple, 
+# you can assign a new value to a variable that holds a tuple.
+dimensions_tuple = [300, 50] # assign new values to variable instead of changing specific element
+
+
+# Styling your Code
+# Python Enhancement Proposal (PEP). One of the oldest PEPs is PEP 8
+# PEP 8 recommends that you use four spaces per indentation level.
+for x in x_list:
+    print(x)
+    if x > 100:
+        print('greater')
+    else:
+        print('lower')
+        
+# PEP recommend that each line should be less than 80 characters.
+# PEP 8 also recommends that you limit all of your comments to 72 characters per line
+# Comments that contradict the code are worse than no comments. 
+# Always make a priority of keeping the comments up-to-date when the code changes!
+# To group parts of your program visually, use blank lines.
+   

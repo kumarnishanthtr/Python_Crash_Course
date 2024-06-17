@@ -148,5 +148,44 @@ for dosa in my_dosa:
     
     print(dosa.title() + ' Dosa')
 
+# 4-13. Buffet: A buffet-style restaurant offers only five basic foods . Think of five
+# simple foods, and store them in a tuple .
+NSCafe_Menu = ('Broost', 'Lemon Grass Shtea', 'Leminty', 'Chashayam')
 
+# 1 Use a for loop to print each food the restaurant offers .
+for food in NSCafe_Menu:
+    print(food.title())
+    
+# 2 Try to modify one of the items, and make sure that Python rejects the change .
+NSCafe_Menu[0] = 'Bouramman Vita'
+# TypeError: 'tuple' object does not support item assignment
 
+# 3 The restaurant changes its menu, replacing two of the items with different foods.
+# Add a block of code that rewrites the tuple, 
+# and then use a for loop to print each of the items on the revised menu .
+NSCafe_Menu = ('Bouramman Vita', 'Dicapi', 'Leminty', 'Chashayam')
+for food in NSCafe_Menu:
+    print(food.title())
+    
+# 4-14. PEP 8: Look through the original PEP 8 style guide 
+# at https://python.org/ dev/peps/pep-0008/ . 
+# You won’t use much of it now, but it might be interesting to skim through it .    
+
+# 4-15. Code Review: Choose three of the programs you’ve written in this chapter
+# and modify each one to comply with PEP 8:
+
+# 1. Use four spaces for each indentation level . Set your text editor to insert
+#    four spaces every time you press tab, if you haven’t already done so (see
+#    Appendix B for instructions on how to do this) .
+from random import randrange
+x = randrange(10)
+if x < 5:
+    print(str(x) + ' is less than 5')
+elif x <= 10:
+    print(str(x) + ' is between 5 and 10')
+
+# 2. Use less than 80 characters on each line, and set your editor to show a
+#    vertical guideline at the 80th character position .
+
+# Don’t use blank lines excessively in your program files .
+# OK MATE!
