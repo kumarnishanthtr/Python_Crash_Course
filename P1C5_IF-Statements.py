@@ -42,3 +42,31 @@ if user_wish not in unsafe_countries:
     print('You can travel to ', user_wish.title(), '. It is safe! ')
 else:
     print('Please do not go to', user_wish.title())
+    
+    
+# if-else Statements
+print("Enter your age!")
+age = int(input())
+
+if age >= 18:
+    print("You are old enough to vote!")
+    print("Have you registered to vote yet?")
+else:
+    print("Sorry. You are not old enough to vote!")
+    print("Please register to vote as soon as you turn 18")
+print("Thank you for using this service!")
+
+
+# if - elif - else
+# consider an amusement park that charges different rates for different age groups:
+# Admission for anyone under age 4 is free.
+# Admission for anyone between the ages of 4 and 18 is $5.
+# Admission for anyone age 18 or older is $10.
+print("Welcome to the NS Amusement Park!. Please enter your age")
+age = int(input())
+if age <= 4:
+    print("Your admission fee is 0$")
+elif age >= 5 and age <= 17:
+    print("Your admission fee is 5$")
+else:
+    print("Your admission fee is 10$")
