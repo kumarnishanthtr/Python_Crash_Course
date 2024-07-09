@@ -62,6 +62,9 @@ print("Thank you for using this service!")
 # Admission for anyone under age 4 is free.
 # Admission for anyone between the ages of 4 and 18 is $5.
 # Admission for anyone age 18 or older is $10.
+
+# method 1
+
 print("Welcome to the NS Amusement Park!. Please enter your age")
 age = int(input())
 if age <= 4:
@@ -70,3 +73,34 @@ elif age >= 5 and age <= 17:
     print("Your admission fee is 5$")
 else:
     print("Your admission fee is 10$")
+
+
+# method 2
+
+print("Welcome to the NS Amusement Park!. Please enter your age")
+age = int(input())
+price = 0
+if age <= 4:
+    price = 0
+elif age <= 18:
+    price = 5
+elif age > 65:
+    price = 5
+else:
+    price = 5
+
+print("Your admission fee is " + str(price) + "$")
+
+# second method is better since it avoids repetitive messages. 
+# to change the output statement, we can change once compared to thrice in method 1
+
+
+# using if statements with lists
+
+requested_flavours = ['vanilla', 'lychee', 'blueberry']
+
+for topping in requested_flavours:
+    if topping == 'lychee':
+        print("sorry we are not having lychee flavour!")
+    else:
+        print("finished adding " + topping)
