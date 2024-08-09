@@ -71,4 +71,22 @@ print(alien_0)
 del alien_0['points']
 print(alien_0)
 
-# Be aware that the deleted key-value pair is removed permanently
+Be aware that the deleted key-value pair is removed permanently
+
+A Dictionary of Similar Objects
+favorite_sports = {
+    'nishanth' : 'football',
+    'pratheek' : 'baseball',
+    'pavan' : 'carrom',
+    'thilak' : 'cricket',
+    'shreyamsha' : 'basketball',
+    'nitish' : 'tennis',
+    }
+
+print("Favorite sport of Nitish is "+favorite_sports['nitish']
+
+# looping through a dictionary
+
+  
+
+
